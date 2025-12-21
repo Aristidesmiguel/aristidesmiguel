@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code2, Rocket, Target, Zap } from "lucide-react";
+import { Button } from "./ui/button";
 
 const highlights = [
   {
@@ -118,6 +119,11 @@ const About = () => {
                 constantemente a evoluir as minhas competências para acompanhar
                 as melhores práticas do mercado.
               </p>
+              <a download href="Aristide Miguel.pdf">
+                <Button className="bg-[#22d3ee] hover:bg-[#22d3ee]/80 cursor-pointer">
+                  Baixar CV
+                </Button>
+              </a>
             </motion.div>
           </div>
           <motion.div

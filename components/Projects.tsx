@@ -105,7 +105,7 @@ const Projects = () => {
 
                   {/* Actions */}
                   <div className="flex gap-3">
-                    <Button  variant="default" size="sm" asChild className="flex-1">
+                    <Button variant="default" size="sm" asChild className="flex-1">
                       <a  href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4" />
                         Demo
