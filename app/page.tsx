@@ -9,15 +9,15 @@ import Technologies from "@/components/Tec";
 export default function Home() {
   return (
     <>
-    <Header />
+      <Header />
       <main>
-       <Hero />
-       <About />
-       <Technologies />
-       <Projects />
-       <Contact />  
-    </main>
-    <Footer />
+        <Hero />
+        <About />
+        <Technologies />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }

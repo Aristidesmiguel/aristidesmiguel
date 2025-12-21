@@ -2,10 +2,10 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, GripHorizontal, Wifi, Shield, MessageSquare } from "lucide-react";
+import { ExternalLink, Github, GripHorizontal, Wifi } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const projects = [
+const projects = [  
   {
     title: "Task Manager",
     description: "Aplicação de gestão de tarefas para organização intuitiva de projetos.",
@@ -24,7 +24,18 @@ const projects = [
     demoUrl: "https://aristidesmiguel.github.io/petShop/",
     codeUrl: "https://github.com/Aristidesmiguel/petShop",
   },
+  {
+    title: "Biblioteca Nacional",
+    description: "Projeto desenvolvido para a Biblioteca Nacional com o objetivo de modernizar o acesso ao acervo, facilitando a consulta, reserva e gestão de livros através de uma plataforma digital intuitiva, segura e de fácil utilização.",
+    technologies: ["React", "TypeScript", "Firebase", "API google Books"],
+    image: "p3.png",
+    icon: Wifi,
+    demoUrl: "#",
+    codeUrl: "https://github.com/Aristidesmiguel/bibliotecaNacional",
+  },
 ];
+
+
 
 const Projects = () => {
   const ref = useRef(null);
@@ -94,8 +105,8 @@ const Projects = () => {
 
                   {/* Actions */}
                   <div className="flex gap-3">
-                    <Button variant="default" size="sm" asChild className="flex-1">
-                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                    <Button  variant="default" size="sm" asChild className="flex-1">
+                      <a  href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4" />
                         Demo
                       </a>
