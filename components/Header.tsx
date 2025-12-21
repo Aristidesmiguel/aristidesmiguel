@@ -9,7 +9,6 @@ const navLinks = [
   { href: "#sobre", label: "Sobre" },
   { href: "#tecnologias", label: "Tecnologias" },
   { href: "#projetos", label: "Projetos" },
-  { href: "#competencias", label: "Competências" },
   { href: "#contacto", label: "Contacto" },
 ];
 
@@ -61,7 +60,7 @@ const Header = () => {
             ))}
           </motion.ul>
 
-          {/* Mobile Menu Button */}
+      
           <Button
             variant="ghost"
             size="icon"
@@ -86,7 +85,7 @@ const Header = () => {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="block text-muted-foreground hover:text-primary transition-colors duration-300 text-base font-medium"
+                      className="block mx-2 text-muted-foreground hover:text-[#22d3ee] text-center transition-colors duration-300 text-base font-medium"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {link.label}
