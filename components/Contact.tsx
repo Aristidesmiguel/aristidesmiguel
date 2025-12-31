@@ -30,8 +30,8 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contacto" className="relative">
-      <div className="container-custom">
+    <section id="contacto" className="relative scroll-smooth">
+      <div>
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 40 }}

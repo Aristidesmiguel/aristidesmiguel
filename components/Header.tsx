@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ImagePreview } from "./ImagePreview";
 
 const navLinks = [
   { href: "#sobre", label: "Sobre" },
@@ -15,6 +16,7 @@ const navLinks = [
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isOpen, SetIsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +32,7 @@ const Header = () => {
         isScrolled ? "backdrop-blur-lg" : "bg-transparent"
       }`}
     >
+      <ImagePreview open={isOpen} onClose={() => SetIsOpen(false)} />
       <nav className="container-custom">
         <div className="flex items-center justify-around h-16 md:h-20">
           <motion.a
@@ -39,7 +42,7 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            AM
+           <img onDoubleClick={() => SetIsOpen(true)} className="w-10 h-10" src="logo.png" alt="Aristides Miguel - Logo" />
           </motion.a>
           <motion.ul
             className="hidden md:flex items-center gap-8"

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen scroll-smooth flex items-center justify-center overflow-hidden">
       {/* Glow effects */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#070b14]/50 rounded-full blur-3xl" />
@@ -24,7 +24,7 @@ export const Hero = () => {
           backgroundSize: "80px 80px",
         }}
       />
-
+      
       <div className="container-custom relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
@@ -107,7 +107,7 @@ export const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          className="absolute translate-y-3/1 bottom-10 left-1/2 -translate-x-1/2"
         >
           <a
             href="#sobre"

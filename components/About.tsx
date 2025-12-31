@@ -34,8 +34,8 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="sobre" className="section-padding relative">
-      <div className="container-custom">
+    <section id="sobre" className="scroll-smooth relative">
+      <div className="">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 40 }}
