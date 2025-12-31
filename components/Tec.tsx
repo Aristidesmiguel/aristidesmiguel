@@ -36,6 +36,11 @@ const technologies = [
     icon: "github.png",
     description: "Controlo de versão",
   },
+  {
+    name: "TypeScript",
+    icon: "type.png",
+    description: "Superset do JavaScript",
+  },
 ];
 
 const Technologies = () => {
@@ -70,13 +75,12 @@ const Technologies = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative"
+                className="group relative p-2.5"
               >
-                <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
-                <div className="relative p-6 md:p-8 rounded-2xl bg-[#0b1220] border border-[#1f2937] card-hover text-center">
+                <div className={`absolute inset-0  rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+                <div className="relative p-6 h-60 md:p-8 rounded-2xl bg-[#0b1220] border border-[#1f2937] card-hover text-center">
                   <div className="mb-4 flex justify-center text-center items-center group-hover:scale-110 transition-transform duration-300">
-                    <img className="w-1/2 h-1/2" src={tech.icon} />
-                    
+                    <img className="w-1/2 h-1/2" src={tech.icon} /> 
                   </div>
                   <div className="text-8xl  flex justify-center items-center text-center group-hover:scale-110 transition-transform duration-300">
                       {tech.text}

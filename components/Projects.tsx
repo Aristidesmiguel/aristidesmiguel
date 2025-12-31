@@ -69,7 +69,7 @@ const Projects = () => {
                 initial={{ opacity: 0, y: 40 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="group relative"
+                className="group relative p-2.5"
               >
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#22d3ee]/10 to-[#22d3ee] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative p-8 rounded-2xl bg-[#0b1220] border border-[#1f2937] card-hover h-full flex flex-col">

@@ -5,6 +5,24 @@
 
 @custom-variant dark (&:is(.dark *));
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070b14; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22d3ee; 
+  border-radius: 10px;
+  margin: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
 :root {
   --background: oklch(0.08 0.03 250);
   --foreground: oklch(0.145 0 0);

@@ -91,7 +91,7 @@ const About = () => {
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="space-y-6"
+              className="space-y-6 p-2.5 text-center md:text-start sm:text-start"
             >
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Sou um desenvolvedor web front-end apaixonado por criar
@@ -130,7 +130,7 @@ const About = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 p-2.5"
           >
             {highlights.map((item, index) => (
               <motion.div

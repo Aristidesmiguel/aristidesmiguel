@@ -50,7 +50,7 @@ const Contact = () => {
             Entre em contacto e vamos construir algo incrível.
           </p>
 
-          <div className="grid sm:grid-cols-3 gap-4 mb-12">
+          <div className="grid sm:grid-cols-3 gap-4 mb-12 p-2.5">
             {contactLinks.map((link, index) => (
               <motion.a
                 key={link.label}
