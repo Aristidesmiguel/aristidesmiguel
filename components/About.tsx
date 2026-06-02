@@ -119,7 +119,7 @@ const About = () => {
                 constantemente a evoluir as minhas competências para acompanhar
                 as melhores práticas do mercado.
               </p>
-              <a download href="Aristide Miguel.pdf">
+              <a download href="Aristides Miguel.pdf">
                 <Button className="bg-[#22d3ee] hover:bg-[#22d3ee]/80 cursor-pointer">
                   Baixar CV
                 </Button>

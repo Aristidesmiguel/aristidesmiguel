@@ -33,6 +33,15 @@ const projects = [
     demoUrl: "#",
     codeUrl: "https://github.com/Aristidesmiguel/bibliotecaNacional",
   },
+   {
+    title: "Eduque",
+    description: "é uma plataforma de gestão escolar desenvolvida para simplificar e centralizar a administração de instituições de ensino.",
+    technologies: ["React", "TypeScript", "Firebase", "TelcoSMS", "Tailwind CSS", "API REST", "AXIOS"],
+    image: "p4.png",
+    icon: Wifi,
+    demoUrl: "http://eduque.vercel.app/",
+    codeUrl: "https://github.com/Aristidesmiguel/Eduque",
+  },
 ];
 
 
