@@ -26,6 +26,12 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    event.preventDefault();
+    document.querySelector(href)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.history.pushState(null, "", href);
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -42,7 +48,7 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-           <img onDoubleClick={() => SetIsOpen(true)} className="w-10 h-10" src="logo.png" alt="Aristides Miguel - Logo" />
+           <img className="w-10 h-10" src="logo.png" alt="Aristides Miguel - Logo" />
           </motion.a>
           <motion.ul
             className="hidden md:flex items-center gap-8"
@@ -56,6 +62,7 @@ const Header = () => {
                   href={link.href}
                   className="text-muted-foreground hover:text-[#22d3ee] transition-colors duration-300 text-sm font-medium"
                   style={{ animationDelay: `${index * 0.1}s` }}
+                  onClick={(event) => handleNavClick(event, link.href)}
                 >
                   {link.label}
                 </a>
@@ -89,7 +96,10 @@ const Header = () => {
                     <a
                       href={link.href}
                       className="block mx-2 text-muted-foreground hover:text-[#22d3ee] text-center transition-colors duration-300 text-base font-medium"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={(event) => {
+                        handleNavClick(event, link.href);
+                        setIsMobileMenuOpen(false);
+                      }}
                     >
                       {link.label}
                     </a>

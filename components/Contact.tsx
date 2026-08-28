@@ -88,7 +88,7 @@ const Contact = () => {
               Tenho disponibilidade para novos desafios. Vamos conversar sobre como posso contribuir para o seu projeto ou equipa.
             </p>
             <Button size="lg" asChild>
-              <a target="_blank" href="https://wa.me/244951754124">
+              <a target="_blank" href="https://wa.me/244976665249">
                 Enviar Mensagem
                 <ArrowUpRight className="w-5 h-5" />
               </a>
