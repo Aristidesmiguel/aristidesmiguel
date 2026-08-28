@@ -30,7 +30,8 @@ const projects = [
     technologies: ["React", "TypeScript", "Firebase", "API google Books"],
     image: "p3.png",
     icon: Wifi,
-    demoUrl: "#",
+    //
+    demoUrl: "",
     codeUrl: "https://github.com/Aristidesmiguel/bibliotecaNacional",
   },
    {
@@ -113,12 +114,14 @@ const Projects = () => {
 
                   {/* Actions */}
                   <div className="flex gap-3">
-                    <Button variant="default" size="sm" asChild className="flex-1">
-                      <a  href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4" />
-                        Demo
-                      </a>
-                    </Button>
+                    {project.demoUrl && (
+                      <Button variant="default" size="sm" asChild className="flex-1">
+                        <a  href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-4 h-4" />
+                          Demo
+                        </a>
+                      </Button>
+                    )}
                     <Button variant="outline" size="sm" asChild className="flex-1">
                       <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4" />
